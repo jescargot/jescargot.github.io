@@ -33,7 +33,7 @@ input{
 label{
 	display: block;
 	font-size: 0.75em;
-	color: #d5d5d5;
+	color: #747474;
 }
 
 #countdown{
@@ -42,7 +42,7 @@ label{
 
 /* index.html styles */
 
-.form-container{
+.form-container {
 	width: 75%;
 	margin: auto;
 }

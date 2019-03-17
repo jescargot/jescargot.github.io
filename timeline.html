@@ -6,7 +6,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
-	
+
 	<!-- HEADER/NAV -->
 	<header> <!--Dark BG-->
 		<h1>Baby Cassidy</h1>
@@ -26,5 +26,33 @@
 <!-- Load scripts last -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/scripts.js"></script>
+
+<!-- Google Sheets Integration for "back end"-->
+<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="https://cdn.blockspring.com/blockspring.js"></script>
+<script>
+//Grab values FROM a Google sheet
+
+//This is taken from the Blockspring site- it is the way that spreadsheets expose their data
+//Would need a JSON.parse to prepare it
+//So we need an array of the rows
+//eachy array is full row
+//[[row1val1, row1val2],[row2val1, row2val2]...]
+blockspring.runParsed("query-google-spreadsheet", {
+    // Here is where you need to decide what data you are grabbing with the Google query syntax
+    // I am finding elements that match the variable num, which is from a previous part of the code
+    // Google syntax makes you request columns with letters as opposed to your column titles.
+    "query": "SELECT A, C WHERE B ="+num,
+    // This is the full URL of your sheet. Just copy and paste from your browser.
+    "url": "YOURURLHERE" 
+    //Cache is false so that your browser does not run an old function when you cnange your code
+    }, { cache: false, expiry: 7200}, function(res) {
+        // All results are part of the res.params.data object.
+        // in my case, I requested two columns from my spreadsheet, one named skill and one named key.
+        //There is one matching row in this case, with two elements
+        var skill=res.params.data[0]['skill'];
+        var key=res.params.data[0]['key'];
+    });
+</script>
 </body>
 </html>

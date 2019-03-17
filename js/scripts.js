@@ -70,3 +70,5 @@ function showRemaining() {
 timer = setInterval(showRemaining, 1000); //set timer variable to hold the result of the showRemaining function
 
 //adding a comment literally just to test my github push
+
+

@@ -27,7 +27,16 @@
 	<!-- Submit Button -->
 	<a  class="btn-submit" onclick="checkPass();">Submit</a>
 	<!-- I wanted this to be an actual "button" but for some reason the JS only works with a link tag so I'm keeping it for now -->
-	<p class="note">Note: You must actually click the button to submit your password, hitting ENTER will not work</p>
+	<p class="note">Note: You must actually click the button to submit your password. Hitting ENTER will not work </p>
+
+	<!--alternate form with option for ENTER key that I can't get to work
+    <form onsubmit="checkPass()">
+    One Single Lonely Password Field
+    <label for="userInput">Password</label>
+    <input type="password" id="userInput" name="password" required>
+    Submit Button
+    <button>Submit</button>
+    </form> -->
 
 </div>
 
@@ -41,5 +50,6 @@
 <!-- Load scripts last -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/scripts.js"></script>
+
 </body>
 </html>
