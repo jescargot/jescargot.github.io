@@ -20,6 +20,7 @@ header{
 
 h1{
 	margin: 0;
+	font-size: 1.5em;
 	display: inline-block;
 	text-transform: uppercase;
 }
@@ -81,4 +82,9 @@ label{
 	color: white;
 	text-transform: uppercase;
 	text-align: center;
+	font-size: 2em;
 }
+
+/* entry.html specific styles */
+
+/* MEDIA QUERIES */
