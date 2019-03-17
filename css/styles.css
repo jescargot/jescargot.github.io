@@ -1,23 +1,9 @@
 /*HEY! DONT FORGET TO TRY TO MINIFY THIS FILE FOR PERFORMANCE BECAUSE THAT'S COOL*/
 /* USE CSS MINIFY FOR THIS */
 
-/*BUTTON COLORS FOR TESTING PURPOSES ONLY*/
+/* COLOR SCHEME!! Dark Gray #747474 | Teal #8ec3af | Light Gray #d5d5d5 | Navy #01395e */
 
-.btn-submit{
-	padding: 5px 7px;
-	outline: none;
-	border:1px solid #a5a5a5;
-	color:#777;
-	background:#d6d6d6;
-}
-
-.btn-submit:hover{
-	border:1px solid pink;
-	color:#fff;
-	background:blue;
-}
-
-/*STYLES START HERE*/
+/* global styles*/
 
 body{
 	font-family: 'Open Sans', Helvetica, sans-serif;
@@ -26,12 +12,73 @@ body{
 }
 
 header{
-	background-color: darkgray;
+	background-color: #747474;
 	margin: 0;
-	padding: 10px;
+	padding: 10px 20px;
 	color: white;
 }
 
 h1{
+	margin: 0;
+	display: inline-block;
 	text-transform: uppercase;
+}
+
+input{
+	display: block;
+	width: 50%;
+	height: 2em;
+}
+
+label{
+	display: block;
+	font-size: 0.75em;
+	color: #d5d5d5;
+}
+
+#countdown{
+	float: right;
+}
+
+/* index.html styles */
+
+.form-container{
+	width: 75%;
+	margin: auto;
+}
+
+.btn-submit{
+	display: inline-block;
+	margin-top: 20px;
+	padding: 10px 100px;
+	color: #fff;
+	background: #8ec3af;
+	border-radius: 5px;
+}
+
+.btn-submit:hover{
+	color: #fff;
+	background: #01395e;
+}
+
+.note{
+	font-style: italic;
+	color: #d5d5d5;
+	font-size: 0.75em;
+}
+
+/* timeline.html specific styles */
+
+.hero-image{
+	background-image: url(../img/sonogram.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	padding: 150px;
+}
+
+.hero-image h2{
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
 }

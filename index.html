@@ -3,28 +3,42 @@
 <head>
 	<meta charset="UTF-8">
 
-	<title>Baby Cassidy's Timeline</title>
+	<title>Baby Cassidy</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
 
 	<header> <!--Dark BG-->
-		<h1>Baby Cassidy's Timeline</h1>
+		<h1>Baby Cassidy</h1>
 		<div id="countdown"></div>
 	</header>
 
+<div class = "form-container">
+
+	<h2>Please Enter Your Password</h2>
+
 	<!-- Password Form -->
-	
 		
-		<!-- One Single Lonely Password Field -->
-		<label for="userInput">Please enter your password</label>
-		<input type="password" id="userInput" name="password" required>
+	<!-- One Single Lonely Password Field -->
+	<label for="userInput">Password</label>
+	<input type="password" id="userInput" name="password" required>
 
-		<!-- Submit button -->
-		<a  class="btn-submit" onclick="checkPass();">submit</a>
+	<!-- Submit Button -->
+	<a  class="btn-submit" onclick="checkPass();">Submit</a>
+	<!-- I wanted this to be an actual "button" but for some reason the JS only works with a link tag so I'm keeping it for now -->
+	<p class="note">Note: You must actually click the button to submit your password, hitting ENTER will not work</p>
 
-	
+</div>
+
+<!-- <div class="color-scheme-tests">
+	<div class="dark-gray"></div>
+	<div class="teal"></div>
+	<div class="light-gray"></div>
+	<div class="navy"></div>
+</div> -->
+
+<!-- Load scripts last -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/scripts.js"></script>
 </body>
