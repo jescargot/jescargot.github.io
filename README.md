@@ -11,6 +11,19 @@ There is an entry page, only accessible by the author (with password) as well as
 To access the entry page, use password "mommy"
 To access the timeline page, use password "friendsandfam"
 
+//CUSTOM CSS SELECTORS
+1.
+2.
+3.
+
+//CUSTOM JS FUNCTION
+I created the custom function checkPass(); that reads user input from a form field, and checks it against the 2 specified options.
+It then redirects the user to the appropriate page based on their password OR displays an error message in an alert.
+
+//OTHER JS FUNCTIONS
+
 //CHALLENGES
 
 //SUCCESSES
+
+//ACKNOWLEDGEMENTS
