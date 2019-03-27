@@ -20,7 +20,7 @@ To access the timeline page, use password "friendsandfam"
 
 And many, many, many more!
 
-I chose not to integrate normalize.css or bootstrap to test my own abilities with CSS and responsive design, since this is a relatively simple layout.
+I chose not to integrate normalize.css or bootstrap to test my own abilities with CSS, media queries, and responsive design, since this is a relatively simple layout.
 
 //CUSTOM JS FUNCTION
 I created the custom function checkPass(); that reads user input from a form field, and checks it against the 2 specified options.
@@ -29,8 +29,12 @@ It then redirects the user to the appropriate page based on their password OR di
 //OTHER JS FUNCTIONS
 I also created a countdown feature (following a tutorial) to display the days, hours, minutes, and seconds left until my due date.
 
+These 2 functions are located externally in the scripts.js file
+
 //FAUX BACK-END
 I integrated Google Sheets to create a faux back-end database to hold my blog entries. The "admin" form currently works to write submissions to a spreadsheet in my Google Drive (https://docs.google.com/spreadsheets/d/1YGCSlwcGoGcnOya0u3xh9oQuwzbl3yfZJzZFec-wwHw/edit?usp=sharing). Unfortunately, I ran out of time before the Code Louisville deadline to finish the read from functionality to display the entries, so they are all hard-coded.
+
+NOTE: THE JAVASCRIPT/JQUERY FOR THIS FUNCTIONALITY IS ALL INLINE IN THE entry.html AND timeline.html FILES!!!
 
 I also couldn't figure out how to handle images in this process, so I removed the photo option I had in my original idea.
 
