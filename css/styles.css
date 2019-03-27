@@ -27,8 +27,13 @@ h1{
 
 input{
 	display: block;
-	width: 50%;
+	width: 100%;
 	height: 2em;
+	margin-bottom: 20px;
+	border-color: #d5d5d5;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 5px;
 }
 
 label{
@@ -38,19 +43,23 @@ label{
 }
 
 #countdown{
-	float: right;
+	margin-top: 10px;
 }
 
 /* index.html styles */
 
 .form-container {
-	width: 75%;
+	width: 90%;
 	margin: auto;
+	text-align: center;
+}
+
+#hidden-label{
+	display: none;
 }
 
 .btn-submit{
 	display: inline-block;
-	margin-top: 20px;
 	padding: 10px 100px;
 	color: #fff;
 	background: #8ec3af;
@@ -86,5 +95,67 @@ label{
 }
 
 /* entry.html specific styles */
+label{
+	text-align: left;
+}
 
-/* MEDIA QUERIES */
+.custom-reset{
+	display: inline-block;
+	border: none;
+	text-align: left;
+	width: auto;
+	font-size: 1em;
+	color: #747474;
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+.custom-submit{
+	display: inline-block;
+	width: 50%;
+	height: 40px;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	font-size: 1em;
+	border: none;
+	margin-top: 20px;
+	padding: 5px;
+	color: #fff;
+	background: #8ec3af;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.custom-submit:hover{
+	color: #fff;
+	background: #01395e;
+}
+
+#post-body{
+	display: block;
+	min-height: 100px;
+	width: 100%;
+	border-color: #d5d5d5;
+	border-width: 2px;
+	border-radius: 5px;
+}
+
+/* timeline.html specific styles*/
+
+/* MEDIA QUERIES START HERE */
+
+/* DESKTOP*/
+@media only screen and (min-width: 992px){
+.form-container{
+	max-width: 50%;
+}
+
+#countdown{
+	float: right;
+}
+
+}
+
+/* XL DESKTOP*/
+@media only screen and (min-width: 1200px){
+
+}

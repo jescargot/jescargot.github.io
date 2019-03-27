@@ -60,11 +60,12 @@ function showRemaining() {
     var hours = Math.floor((distance % _day) / _hour); //find number of hours left using math
     var minutes = Math.floor((distance % _hour) / _minute); //find number of minutes left using math
     var seconds = Math.floor((distance % _minute) / _second); //find number of seconds left using math
+    var intro = 'Coming in '; //create variable to hold string to place before countdown
 
-    document.getElementById('countdown').innerHTML = days + ' days '; //display number of days left
+    document.getElementById('countdown').innerHTML = intro + days + ' days '; //display number of days left
     document.getElementById('countdown').innerHTML += hours + ' hrs '; //display number of hours left
     document.getElementById('countdown').innerHTML += minutes + ' mins and '; //display number of mins left
-    document.getElementById('countdown').innerHTML += seconds + ' secs left!'; //display number of seconds left
+    document.getElementById('countdown').innerHTML += seconds + ' secs!'; //display number of seconds left
 }
 
 timer = setInterval(showRemaining, 1000); //set timer variable to hold the result of the showRemaining function

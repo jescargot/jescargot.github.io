@@ -3,13 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Baby Cassidy's Timeline</title>
+	<title>Baby Cassidy</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
 
-	<header> <!--Dark BG-->
+	<header><!--Dark BG-->
 		<h1>Baby Cassidy</h1>
 		<div id="countdown"></div>
 	</header>
@@ -23,24 +23,25 @@
 
 		<!-- Entry Title Field -->
 		<label for="">Entry Title*</label>
-		<input type="text" id="pass" name=" " required>
+		<input type="text" id="post-title" name=" " required>
 
 		<!-- Entry Date Field -->
 		<label for="">Entry Date*</label>
-		<input type="text" id="pass" name=" " required>
+		<input type="text" id="post-date" name=" " required>
 
-		<!-- Entry Image Field -- NICE TO HAVE, NOT MANDATORY
+		<!-- Entry Image Field -- Difficulty including this with the google sheets integration...
 		<label for="">Add Image Here</label>
 		<input type="text" id="pass" name=" "> -->
 		
 		<!-- Entry Body Field -->
 		<label for="">Entry Body*</label>
-		<input type="text" id="pass" name=" " required>
+		<!--<input type="text" id="post-body" name=" " required>-->
+		<textarea id="post-body"></textarea>
 
 		<!-- Clear Form Button -->
-		<input type="reset" value="Clear Form">
+		<input type="reset" class="custom-reset" value="Clear Form">
 		<!-- Submit Button -->
-		<input type="submit" value="Submit">
+		<input type="submit" class="custom-submit" value="Submit">
 	</form>
 
 	<!-- FORM END -->
