@@ -8,11 +8,12 @@
 body{
 	font-family: 'Open Sans', Helvetica, sans-serif;
 	margin: 0;
+	background-repeat: #fff;
 
 }
 
 header{
-	background-color: #747474;
+	background-color: #01395e;
 	margin: 0;
 	padding: 10px 20px;
 	color: white;
@@ -26,7 +27,16 @@ h1{
 }
 
 h2{
-	color: #01395e;
+	color: #747474;
+}
+
+h3{
+	font-weight: bolder;
+}
+
+h4{
+	font-style: italic;
+	font-weight: lighter;
 }
 
 input{
@@ -130,7 +140,6 @@ label{
 
 /* timeline.html specific styles*/
 
-
 .hero-image{
 	background-image: url(../img/sonogram.png);
 	background-repeat: no-repeat;
@@ -152,15 +161,21 @@ label{
 
 /* Set a background color */
 body {
-  /*background-color: #01395e;*/
   font-family: 'Open Sans', Helvetica, sans-serif;
 }
 
 /* The actual timeline (the vertical ruler) */
-.timeline {
+.timeline { 
+  background-color: #d5d5d5;
+  padding-top: 20px;
   position: relative;
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
+}
+
+.timeline-inner{
+	max-width: 1200px;
+	margin: auto;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -218,7 +233,7 @@ body {
   right: 30px;
   border: medium solid;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #d5d5d5;
+  border-color: transparent transparent transparent #fff;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -232,7 +247,7 @@ body {
   left: 30px;
   border: medium solid;
   border-width: 10px 10px 10px 0;
-  border-color: transparent #d5d5d5 transparent transparent;
+  border-color: transparent #fff transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -244,9 +259,10 @@ body {
 .content {
   color: #01395e;
   padding: 20px 30px;
-  background-color: #d5d5d5;
+  background-color: #fff;
   position: relative;
   border-radius: 6px;
+  box-shadow: 3px 3px 5px grey;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -268,7 +284,7 @@ body {
     left: 60px;
     border: medium solid;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #d5d5d5 transparent transparent;
+    border-color: transparent #fff transparent transparent;
   }
 
 /* Make sure all circles are at the same spot */
@@ -285,9 +301,15 @@ body {
 /* CUSTOM MEDIA QUERIES START HERE */
 
 /* DESKTOP*/
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 992px){ /*992 px wide and above*/
 .form-container{
 	max-width: 50%;
+}
+
+#userInput{
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #countdown{
@@ -302,6 +324,6 @@ body {
 }
 
 /* XL DESKTOP*/
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1200px){ /*1200 px wide and above*/
 
 }
