@@ -18,7 +18,7 @@
 
 	<!-- Entry Form -->
 
-	<form>
+	<form id="entryForm">
 		<h2>Welcome Back, Mommy!</h2>
 
 		<!-- Entry Title Field -->
@@ -90,11 +90,14 @@
 			"values": allData},
 			//Provided on the page at https://open.blockspring.com/pkpp1233/append-to-google-spreadsheet
 			{ "api_key": "br_107234_3973b9223c2654174e23107078e4d170a229c3c3" }, 
+			
 			function(res){
-				console.log(res);
-		});
-	});
+			console.log(res);
+			});
 
+		$('#entryForm input[type="text"]').val('');
+		$('#entryForm textarea').val('');
+	});
 </script>
 </body>
 </html>
